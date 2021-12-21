@@ -13,6 +13,7 @@ export const useRecursiveRef = (url) => {
   const dispatch = async (data, key) => {
     try {
       setIsLoading(true);
+      setData([]);
       setError('');
       setIsSuccess(false);
       const dataset = data;
